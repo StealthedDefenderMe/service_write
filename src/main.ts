@@ -9,12 +9,14 @@ async function bootstrap() {
       transport: Transport.TCP,
       options: {
         host: '0.0.0.0',
-        port: 3001
+        port: 8082
       }
     }
   );
 
-  console.log(`WRITE SERVICE RUNNING ON PORT 3001. STARTED AT ${new Date()}`)
+
+  await app.listen()
+  console.log(`WRITE SERVICE RUNNING ON PORT 8082. STARTED AT ${new Date()}`)
   
 }
 bootstrap();

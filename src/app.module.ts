@@ -9,7 +9,7 @@ import { UsersService } from './service/users.service';
 
 @Module({
   imports: [
-    MongooseModule.forRoot("mongodburl"),
+    MongooseModule.forRoot("mongodb+srv://gandu69:5qQkwVjxpOmBaDSe@nodex9sf.zfmlfvo.mongodb.net/main"),
     MongooseModule.forFeature([
       { name: UsersModel.name, schema: UsersSchema }
     ])

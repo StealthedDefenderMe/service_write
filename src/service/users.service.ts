@@ -14,7 +14,6 @@ export class UsersService {
 
     // Function to create user into system
     async createUserService(payload: {dto: any} ):Promise<GenericOperationRes>{
-        console.log("DTO received at write service----------------", payload)
         return {
             statusCode: HttpStatus.CREATED,
             message: "User created successfully"
